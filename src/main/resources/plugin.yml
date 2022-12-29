@@ -1,0 +1,31 @@
+name: CensorMuteSpam
+version: '${version}'
+main: net.phcode.censormutespam.censormutespam.CensorShip
+api-version: 1.18
+description: Censoring and Mutes player or avoid Spam
+commands:
+  검열:
+    aliases: ['censor']
+  음소거:
+    aliases: ['mute']
+  음소거해제:
+    aliases: ['unmute']
+  도배:
+    aliases: ['spam']
+  명령어모음:
+    description: 명령어를 보여줍니다
+  기간음소거:
+    aliases: ['mutetime']
+permissions:
+  cms.c:
+    default: op
+    description: censorship
+  cms.m:
+    default: op
+    description: mute
+  cms.s:
+    default: op
+    description: spam
+  cms.h:
+    default: op
+    description: help
